@@ -8,19 +8,29 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="header">
-      <div class="logo">
-        LOGO
+    <div class = "header">
+      <!-- Header needs to wrap around everything since we want both left
+      and right parts of the bar to be part of the header-->
+
+      <!-- Then down here we can separate the bar by left-->
+      <div class="left">
+        <div class="logo">
+          LOGO
+        </div>
+        <ul class="links">
+          <li><a href="google.com">link-one</a></li>
+          <li><a href="google.com">link-two</a></li>
+          <li><a href="google.com">link-three</a></li>
+        </ul>
       </div>
-      <ul class="links">
-        <li><a href="google.com">link-one</a></li>
-        <li><a href="google.com">link-two</a></li>
-        <li><a href="google.com">link-three</a></li>
-      </ul>
+
+      <!-- and separate the other part by right-->
+    <div class = "right">
       <button class="notifications">
         1 new notification
       </button>
-      <div class="profile-image"></div>
+        <div class="profile-image"></div>
+      </div>
     </div>
   </body>
 </html>

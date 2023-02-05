@@ -6,8 +6,6 @@ body {
   margin: 0;
   background: #eee;
   font-family: Besley, serif;
-
-  
 }
 
 .header {
@@ -15,13 +13,16 @@ body {
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
 
-  /*
-    display flex to make the box flexible
-    align-items will center everything to be in the middle horizontally
+  /* 
+    Remember: header wraps around EVERYTHING
+    display put the boxes in flex format
+    justify moves the buttons to the right
+    padding adds more space between the stuff
   */
 
   display: flex;
-  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
 }
 
 .profile-image {
@@ -29,7 +30,7 @@ body {
   box-shadow: inset 2px 2px 4px rgba(0,0,0,.5);
   border-radius: 50%;
   width: 48px;
-  height: 48px;
+  height:  48px;
 }
 
 .logo {
@@ -37,8 +38,6 @@ body {
   font-size: 32px;
   font-weight: 900;
   font-style: italic;
-
-  padding: 10px;
 }
 
 button {
@@ -47,7 +46,6 @@ button {
   background: rebeccapurple;
   color: white;
   padding: 8px 24px;
-
 }
 
 a {
@@ -59,10 +57,28 @@ a {
 ul {
   list-style-type: none;
 
-  /* display flex so the item becomes a flexible
-    gap allows space between each of the links
+  /*
+    display makes the tab thinner and in flex format
+    padding gets rid of space between logo and link since there is a padding already set
+    gap adds space between each link 
   */
-
+  
   display: flex;
-  gap: 10px;
+  margin: 0;
+  padding: 0;
+  gap: 16px;
+  
+}
+
+.left, .right{
+  /*
+    display adds the flex format and brings the list up
+    align centers the list horizontally
+    gap adds space between everything on the left and right side
+  */
+  
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  
 }
