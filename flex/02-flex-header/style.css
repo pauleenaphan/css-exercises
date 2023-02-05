@@ -3,13 +3,11 @@
   background: papayawhip;
 
   /* adding display flex allows the logo in the box to become flex
-    gap adds space between ul and the logo
     padding adds space between the text and the top border of the box
     align-items centers the ul and logo to the middle of the box horizontally
     justify-content will center the logo to the middle to add space between list and logo element
   */
   display: flex;
-  gap: 30px;
   padding: 10px;
   align-items: center;
   justify-content: space-between;
