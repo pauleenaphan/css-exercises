@@ -1,6 +1,18 @@
 .header  {
   font-family: monospace;
   background: papayawhip;
+
+  /* adding display flex allows all the items in the box to become flex
+    gap adds space between ul and the logo
+    padding adds space between the text and the top border of the box
+    align-items centers the ul to the middle of the box horizontally
+    justify-content will center the logo to the middle to even out the space
+  */
+  display: flex;
+  gap: 30px;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
@@ -14,6 +26,11 @@
 ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
+
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  gap: 8px;
 }
 
 a {
