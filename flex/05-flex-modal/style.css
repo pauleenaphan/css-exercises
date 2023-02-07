@@ -13,6 +13,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
+
+  
 }
 
 .modal {
@@ -20,6 +23,12 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+
+  /* Adding display flex will allow the whole thing to have the flexbox format */
+  display: flex;
+  padding: 16px;
+  gap: 16px;
+ 
 }
 
 .icon {
@@ -33,6 +42,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  /* prevents the icon from shrinking*/
+  flex-shrink: 0;
+
 }
 
 .close-button {
@@ -46,11 +59,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
+
 }
 
 button {
   padding: 8px 16px;
   border-radius: 8px;
+
+  
+  
 }
 
 button.continue {
@@ -63,4 +81,21 @@ button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+}
+
+
+.header{
+  /* Affects the header font and size */
+  display: flex;
+  font-weight: bold;
+  font-size: 20px;
+
+  align-items: center;
+  /* justify-content puts space between the title and X*/
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.text{
+  margin-bottom: 16px;
 }
