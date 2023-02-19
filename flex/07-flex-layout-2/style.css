@@ -3,6 +3,8 @@ body {
   margin: 0;
   min-height: 100vh;
 
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
@@ -10,14 +12,18 @@ body {
   background: darkmagenta;
   color: white;
 
-  
-  font-size: 32px;
-  font-weight: bold;
-  padding-left: 16px;
-
   display: flex;
   align-items: center;
-  
+
+  font-size: 32px;
+  font-weight: 900;
+  padding: 0 16px;
+
+}
+
+.body{
+  flex: 1;
+  display: flex;
 }
 
 .footer {
@@ -33,9 +39,10 @@ body {
 .sidebar {
   width: 300px;
   background: royalblue;
-
+ 
   flex-shrink: 0;
   padding: 16px;
+  
 }
 
 .card {
@@ -43,9 +50,9 @@ body {
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
 
-  padding: 32px;
-  max-width: 300px;
-  min-height: 300px;
+  padding: 16px;
+  margin: 16px;
+  width: 300px;
 }
 
 .middle{
@@ -55,9 +62,25 @@ body {
 
 .cards{
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   padding: 32px;
-  gap: 30px;
+  
 }
 
+
+a{
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+ul{
+  list-style-type: none;
+  /*Puts the links on the left side*/
+  margin: 0;
+  padding: 0;
+}
+
+li{
+  margin-bottom: 16px;
+}
